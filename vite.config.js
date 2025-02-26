@@ -48,6 +48,7 @@ export default defineConfig({
     assetsInlineLimit: 0,
     emptyOutDir: true,
     outDir: '../dist',
+    minify: false, // Отключаем минификацию
   },
   root: 'src',
   base: '',
