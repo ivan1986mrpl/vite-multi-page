@@ -18,15 +18,12 @@ export default defineConfig({
     noAttr(),
     ViteImageOptimizer({
       png: {
-        // https://sharp.pixelplumbing.com/api-output#png
         quality: 70,
       },
       jpeg: {
-        // https://sharp.pixelplumbing.com/api-output#jpeg
         quality: 40,
       },
       jpg: {
-        // https://sharp.pixelplumbing.com/api-output#jpeg
         quality: 40,
       },       
       webp: {
