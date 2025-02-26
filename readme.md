@@ -1,5 +1,9 @@
-<h1>Vite HTML</h1>
+# сборка vite начальная
 
-<p>Lightweight Vite startup template for a traditional multi-page websites.</p>
+- npm i
 
-<blockquote>Important rule! Do not delete the <code>second.html</code> file until the new next file of the multi-page site is created.</blockquote>
+- npm run dev
+
+- npm run build
+
+- npm run preview

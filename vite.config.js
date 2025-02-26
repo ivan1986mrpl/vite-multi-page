@@ -1,8 +1,8 @@
 import SassGlob from 'vite-plugin-sass-glob-import';
 import { defineConfig } from 'vite';
 import { sync } from 'glob';
-import Inspect from 'vite-plugin-inspect';//https://github.com/antfu-collective/vite-plugin-inspect
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';//https://github.com/FatehAK/vite-plugin-image-optimizer
+
 
 const noAttr = () => {
   return {
@@ -16,15 +16,17 @@ export default defineConfig({
   plugins: [
     SassGlob(),
     noAttr(),
-    Inspect(),
     ViteImageOptimizer({
       png: {
+        // https://sharp.pixelplumbing.com/api-output#png
         quality: 70,
       },
       jpeg: {
+        // https://sharp.pixelplumbing.com/api-output#jpeg
         quality: 40,
       },
       jpg: {
+        // https://sharp.pixelplumbing.com/api-output#jpeg
         quality: 40,
       },       
       webp: {
@@ -48,7 +50,6 @@ export default defineConfig({
     assetsInlineLimit: 0,
     emptyOutDir: true,
     outDir: '../dist',
-    minify: false, // Отключаем минификацию
   },
   root: 'src',
   base: '',
